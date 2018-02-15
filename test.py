@@ -22,7 +22,9 @@ if __name__ == '__main__':
     print(heap.top())
     while not heap.empty():
         print(heap.pop())
+
     print('*' * 30)
+
     testcase = {'a': 4, 'b': 3, 'c': 6, 'd': 2, 'e': 9}
     heap = UpdatableHeap(testcase, minheap=False)
     print(heap.top())
