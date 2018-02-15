@@ -120,3 +120,21 @@ class UpdatableHeap:
 
     def empty(self):
         return len(self.arr) == 1
+
+    def __iter__(self):
+        return iter(self.dic)
+
+    def __delitem__(self, key):
+        self.remove(key)
+
+    def keys(self):
+        return self.dic.keys()
+
+    def values(self):
+        return self.dic.values()
+
+    def items(self):
+        return self.dic.items()
+
+
+__all__ = ['UpdatableHeap']

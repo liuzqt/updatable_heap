@@ -13,7 +13,7 @@
 '''
 
 from updatable_heap import UpdatableHeap
-
+from heapdict import heapdict
 if __name__ == '__main__':
     testcase = {'a': 4, 'b': 3, 'c': 6, 'd': 2, 'e': 9}
     heap = UpdatableHeap(testcase)
@@ -32,3 +32,6 @@ if __name__ == '__main__':
     print(heap.top())
     while not heap.empty():
         print(heap.pop())
+
+    hp = heapdict()
+    hp.items()
